@@ -64,7 +64,7 @@ public class App {
         System.out.println("Введіть текстовий рядок: ");
         String s = input.next();
         for (int i = 0; i<n; i++) {
-            System.out.println(s);
+            System.out.print(s+System.lineSeparator());
         }
     }
 
