@@ -17,25 +17,29 @@ public class App {
 
     }
 
-    private static void numberSqured(){
+    private static int numberSqured(){
         System.out.println("1. Введіть ціле число: ");
         int number = input.nextInt();
-        System.out.println("Квадрат числа "+number+" дорівнює "+Math.pow(number,2));
+        int squred = (int) Math.pow(number,2);
+        System.out.println("Квадрат числа "+number+" дорівнює "+squred);
+        return squred;
     }
 
-    private static void cylinderV(double radius, double height) {
+    private static double cylinderV(double radius, double height) {
         double V = Math.PI*Math.pow(radius,2)* height;
         System.out.println("2. Об'єм циліндра з радіусом "+ radius +" і висотою "+ height +" дорівнює "+V);
+        return V;
     }
 
-    private static void arrSum(int... nums) {
+    private static int arrSum(int... nums) {
         int sum = 0;
-        if (nums == null || nums.length == 0) return;
+        if (nums == null || nums.length == 0) return sum;
         System.out.println("3. Масив чисел: "+ Arrays.toString(nums));
         for(int num : nums){
             sum+=num;
         }
         System.out.println("Сума всіх елементів масиву дорівнює "+sum);
+        return sum;
     }
 
     private static void flipString(){
@@ -49,13 +53,14 @@ public class App {
         System.out.println("Рядок в зворотньому порядку: "+flippedString);
     }
 
-    private static void power() {
+    private static int power() {
         System.out.println("5. Введіть a: ");
         int a = input.nextInt();
         System.out.println("Введіть b: ");
         int b = input.nextInt();
         int power = (int) Math.pow(a,b);
         System.out.println("Результат "+a+"^"+b+" дорівнює "+power);
+        return power;
     }
 
     private static void printNTimes() {
