@@ -7,6 +7,10 @@ public class App {
                 new Triangle(3,4,5),
                 new Square(4)
         };
+        printAreas(figures);
+    }
+
+    private static void printAreas(GeometricFigure[] figures) {
         for (GeometricFigure f : figures) {
             System.out.println(f+" Area: "+f.area());
         }
