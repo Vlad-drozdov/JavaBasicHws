@@ -1,12 +1,13 @@
 package hw.hw14;
+import static hw.hw14.ConsolePrinter.*;
 
 public class App {
     static ConsolePrinter consolePrinter = new ConsolePrinter();
 
     public static void main(String[] args) {
-        ConsolePrinter.Message msg1 = new ConsolePrinter.Message("123","fdd");
-        ConsolePrinter.Message msg2 = new ConsolePrinter.Message("csshgc",null);
-        ConsolePrinter.Message msg3 = new ConsolePrinter.Message(null,null);
+        Message msg1 = new Message("123","fdd");
+        Message msg2 = new Message("csshgc",null);
+        Message msg3 = new Message(null,null);
 
         consolePrinter.print(msg1);
         consolePrinter.print(msg2);
