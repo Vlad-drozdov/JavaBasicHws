@@ -1,7 +1,8 @@
 package hw.hw15;
 
-public interface CommonAdvise {
-    default void advise(Day day){
+public class CommonAdviser implements Adviser {
+    @Override
+    public void advise(Day day) {
         switch (day){
             case MONDAY,TUESDAY,WEDNESDAY,THURSDAY:
                 System.out.println("Будь продуктивним! Працюй над цілями, але не перевтомлюйся.");
